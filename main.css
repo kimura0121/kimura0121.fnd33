@@ -1,0 +1,58 @@
+.displayFlex {
+    display: flex;
+}
+
+.marginLeft {
+    margin-left: 3vw;
+}
+
+.raceArea {
+    height: 90vh;
+    width: 65vw;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    justify-self: center;
+    border: solid black;
+    background: url(turf.png);
+
+}
+
+#commentaryImg {
+    height: 10vh;
+    width: 5vw;
+}
+
+#commentArea {
+    width: 20vw;
+}
+
+.img {
+    height: 9vh;
+    width: 4vw;
+}
+
+#commentaryImg {
+    height: 15vh;
+    width: 8vw;
+    margin-left: 3vw;
+}
+
+
+#winnerImg {
+    height: 30vh;
+    width: 15vw;
+}
+
+#lastDialog {
+    height: 80vh;
+    width: 30vw;
+    background: url(goal.png);
+}
+
+#lastImg{
+    height: 25vh;
+    width: 20vw;
+    margin-top: 50vh;
+    left: 0vw;
+    position: relative;
+}
