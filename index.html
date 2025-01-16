@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <!-- css -->
+  <link href="main.css" rel="stylesheet" type="text/css">
+
+  <!-- title -->
+  <title>順番決め</title>
+
+</head>
+
+<body>
+  <!-- 要素を横並び -->
+  <div class="displayFlex">
+    <!-- 要素の左側を3vw分空ける -->
+    <div class="marginLeft">
+      <!-- セレクトボックス配置 -->
+      <select id="num" onchange="getHeadcount()">
+        <!-- セレクトボックス中身 -->
+        <option id="0">0</option>
+        <option id="3">3</option>
+        <option id="4">4</option>
+        <option id="5">5</option>
+        <option id="6">6</option>
+        <option id="7">7</option>
+        <option id="8">8</option>
+        <option id="9">9</option>
+        <option id="10">10</option>
+      </select>
+
+      <!-- ダイアログ　ゴール前 -->
+      <dialog id="lastDialog"></dialog>
+    
+      <!-- 結果表示ダイアログ -->
+      <dialog id="resultDialog">
+        <!-- 文字追加 -->
+        <p>結果発表!!</p>
+        <!-- 要素を横並び -->
+        <div class="displayFlex">
+          <!-- 順位表示 -->
+          <div id="rankResult"></div>
+          <!-- 要素の左側を3vw分空ける -->
+          <div class="marginLeft">
+            <!-- 優勝者名前表示 -->
+            <p id="winnerName"></p>
+            <!-- 画像配置 -->
+            <img id="winnerImg" src="winner.png">
+          </div>
+        </div>
+        <!-- 終了ボタン -->
+        <button type="button" onclick="closeDialog()">終了する</button>
+      </dialog>
+
+      <!-- 人数分のテキストボックス配置 -->
+      <div id="nameForm"></div>
+
+      <!-- レース準備ボタン -->
+      <button type="button" onclick="createRaceArea()">名前決定</button>
+
+      <!-- レース開始ボタン -->
+      <button type="button" onclick="raceAnimation()">レーススタート</button>
+
+      <!-- label -->
+      <p id="commentArea">さぁ見せよう！トヨタの競馬の心意気アイビスシス課ダッシュ開催します！！</p>
+      <!-- 画像 -->
+      <img id="commentaryImg" class="anounceArea" src="zikkyou.png">
+
+    </div>
+
+    <!-- レースエリア -->
+    <div class="raceArea">
+      <div id="imgArea"></div>
+    </div>
+  </div>
+
+  <!-- js -->
+  <script src="comment.js"></script>
+  <script src="main.js"></script>
+  <script src="raceAnimation.js"></script>
+  <script src="raceResult.js"></script>
+
+</body>
+
+</html>
