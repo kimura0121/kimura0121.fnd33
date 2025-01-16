@@ -13,10 +13,6 @@ function raceAnimation(){
     // 座標をずらした回数を判断
     if(animationCount <= 5){
 
-        if(animationCount === 4) {
-            comment("last");
-        }
-
         // imgAreaを取得
         let img = document.getElementById("imgArea");
         // imgAreaの子要素を取得
